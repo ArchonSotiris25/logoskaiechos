@@ -10,13 +10,20 @@
   
 
 /* Βελτίωση αναγνωσιμότητας κεφαλής — χωρίς αλλαγές στο υπόλοιπο περιεχόμενο */
-.hero .hero-content{background:rgba(255,249,237,.97);border:1px solid rgba(138,96,42,.35);border-radius:14px;box-shadow:0 12px 42px rgba(24,18,11,.32);max-width:940px;padding:44px 38px;backdrop-filter:blur(3px)}
+.hero .hero-content{background:transparent;border:0;border-radius:0;box-shadow:none;max-width:940px;padding:44px 38px;backdrop-filter:none}
 .hero h1,.hero h1 span,.hero blockquote,.hero .intro,.hero .eyebrow{color:#10283a!important;text-shadow:none!important}
 .hero h1 span{color:#754511!important}
 .hero .btn.outline{color:#10283a!important;background:#fff9ec!important;border-color:#754511!important}
 .hero .btn:not(.outline){color:#fff!important;background:#76501b!important;border-color:#76501b!important}
-@media(max-width:680px){.hero .hero-content{margin:22px 12px;padding:32px 17px;background:rgba(255,249,237,.94)}.hero h1{font-size:clamp(37px,9vw,58px)}.hero h1 span{letter-spacing:4px}}
+@media(max-width:680px){.hero .hero-content{margin:22px 12px;padding:32px 17px;background:transparent}.hero h1{font-size:clamp(37px,9vw,58px)}.hero h1 span{letter-spacing:4px}}
 
+
+/* Τυπογραφία επάνω στην εικόνα — χωρίς πλαίσιο */
+.hero .hero-content .eyebrow,.hero .hero-content blockquote,.hero .hero-content .intro{font-weight:800!important;color:#092b43!important;text-shadow:0 1px 2px rgba(255,255,255,.98),0 0 8px rgba(255,255,255,.95),0 0 20px rgba(255,255,255,.85)!important}
+.hero .hero-content .eyebrow{font-size:clamp(14px,1.55vw,19px);letter-spacing:2px}
+.hero .hero-content blockquote{font-size:clamp(23px,3vw,37px);line-height:1.42}
+.hero .hero-content .intro{font-size:clamp(19px,2.1vw,25px)}
+.hero .hero-content h1,.hero .hero-content h1 span{text-shadow:0 1px 2px rgba(255,255,255,.98),0 0 12px rgba(255,255,255,.9)!important}
 </style><style>
 /* Μόνο η επιλεγμένη ελληνοβυζαντινή κεφαλή – υπόλοιπη σελίδα ανέπαφη */
 .hero{background:#f3e4c9 url("elliniki-mousiki-parakatathiki.jpg") center center/cover no-repeat;min-height:76vh;color:#082b43}
